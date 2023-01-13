@@ -16,14 +16,17 @@ const Header = () => {
 
   const [nav, setNav] = useState(false);
   const [navColor, setNavColor] = useState("white");
+  const [navTextColor, setNavTextColor] = useState("black");
   const [navFix, setNavFix] = useState("inherit");
 
   const listenScrollEvent = () => {
     if (window.scrollY > 10) {
-      setNavColor("#222831");
+      setNavColor("#06283D");
+      setNavTextColor("white");
       setNavFix("fixed");
     } else {
       setNavColor("white");
+      setNavTextColor("black");
       setNavFix("inherit");
     }
   };
@@ -37,11 +40,12 @@ const Header = () => {
 
   return (
     <div
-      className="flex justify-between items-center w-full h-20 px-4 z-30 text-c-white shadow-black shadow-lg"
+      className="flex justify-between items-center w-full h-20 px-4 z-30  shadow-black shadow-sm"
       style={{
         backgroundColor: navColor,
         transition: "all .3s",
         position: navFix,
+        color: navTextColor,
       }}
     >
       {/* Medium to Larger Device */}

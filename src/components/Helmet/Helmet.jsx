@@ -1,6 +1,6 @@
 const Helmet = (props) => {
   document.title = "BikeBikeBike - " + props.title;
-  return <div className="w-screen">{props.children}</div>;
+  return <div className="">{props.children}</div>;
 };
 
 export default Helmet;
