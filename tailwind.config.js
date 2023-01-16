@@ -11,7 +11,7 @@ module.exports = {
       },
       fontFamily: {
         "f-primary": "'Montserrat', sans-serif;",
-        "f-secondary": "'Esteban', sans-serif;",
+        "f-secondary": "'Work Sans', sans-serif;",
       },
     },
   },

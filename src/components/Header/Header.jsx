@@ -5,13 +5,13 @@ import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import { useEffect, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const navLinks = [
-    { id: 1, navLink: "Home" },
-    { id: 2, navLink: "Shop" },
-    { id: 3, navLink: "Cart" },
+    { id: 1, navLink: "Home", path:"/home" },
+    { id: 2, navLink: "Shop", path:"/shop" },
+    { id: 3, navLink: "Cart", path:"/cart" },
   ];
 
   const [nav, setNav] = useState(false);
@@ -57,10 +57,10 @@ const Header = () => {
         </div>
         {/* Links */}
         <ul className="nav-links hidden md:flex">
-          {navLinks.map(({ id, navLink }) => (
-            <li key={id} className="px-4 text-sm  cursor-pointer">
+          {navLinks.map(({ id, navLink,path }) => (
+            <Link key={id} className="px-4 text-sm  cursor-pointer" to={path}>
               {navLink}
-            </li>
+            </Link>
           ))}
         </ul>
 
@@ -92,10 +92,10 @@ const Header = () => {
       {/* Mobile menu link */}
       {nav && (
         <ul className="w-full h-screen absolute top-0 left-0 bg-c-primary flex justify-center items-center flex-col">
-          {navLinks.map(({ id, navLink }) => (
-            <li key={id} className="py-6 capitalize cursor-pointer text-3xl">
+          {navLinks.map(({ id, navLink,path }) => (
+            <Link key={id} className="py-6 capitalize cursor-pointer text-3xl" to={path}>
               {navLink}
-            </li>
+            </Link>
           ))}
         </ul>
       )}

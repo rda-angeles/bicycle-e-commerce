@@ -2,11 +2,11 @@ import img1 from "./images/bike1.jpg";
 import img2 from "./images/bike2.jpg";
 import img3 from "./images/bike3.jpg";
 import img4 from "./images/bike4.jpg";
-import img5 from "./images/bike5.jpg";
-import img6 from "./images/bike6.jpg";
-import img7 from "./images/bike7.jpg";
-import img8 from "./images/bike8.jpg";
-import img9 from "./images/bike9.jpg";
+import img5 from "./images/trek.png";
+import img6 from "./images/sunpeed.png";
+import img7 from "./images/orbea.png";
+import img8 from "./images/mtp.png";
+import img9 from "./images/canyon.png";
 import img10 from "./images/bike10.jpg";
 import img11 from "./images/s-works-diverge.png";
 import img12 from "./images/3t-exploro.png";
@@ -63,7 +63,7 @@ export const products = [
   },
   {
     id: 7,
-    prodName: "Devel",
+    prodName: "Orbea",
     price: "100,000php",
     category: "Mountain Bike",
     desc: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique voluptatum praesentium nihil amet qui, aliquam quisquam quaerat dolor veniam, quis hic reprehenderit autem quae sunt error laudantium impedit ea quo. Architecto consequuntur fugiat ratione officiis aliquam consequatur iste, magni ipsa quam laborum quos voluptatum ea odit voluptate dolore quaerat nostrum, vel ullam impedit saepe quas! Sunt dolor deleniti impedit necessitatibus quasi! Earum est harum aspernatur. Temporibus sunt enim necessitatibus labore ratione? Corporis soluta, tempora laborum quia quisquam, libero ea numquam, suscipit iure obcaecati delectus deserunt? Possimus ipsum, ipsam maiores suscipit, earum quibusdam sint atque aperiam ad, officia delectus nobis ipsa?",
@@ -79,7 +79,7 @@ export const products = [
   },
   {
     id: 9,
-    prodName: "Colnago",
+    prodName: "Canyon",
     price: "100,000php",
     category: "Mountain Bike",
     desc: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique voluptatum praesentium nihil amet qui, aliquam quisquam quaerat dolor veniam, quis hic reprehenderit autem quae sunt error laudantium impedit ea quo. Architecto consequuntur fugiat ratione officiis aliquam consequatur iste, magni ipsa quam laborum quos voluptatum ea odit voluptate dolore quaerat nostrum, vel ullam impedit saepe quas! Sunt dolor deleniti impedit necessitatibus quasi! Earum est harum aspernatur. Temporibus sunt enim necessitatibus labore ratione? Corporis soluta, tempora laborum quia quisquam, libero ea numquam, suscipit iure obcaecati delectus deserunt? Possimus ipsum, ipsam maiores suscipit, earum quibusdam sint atque aperiam ad, officia delectus nobis ipsa?",
