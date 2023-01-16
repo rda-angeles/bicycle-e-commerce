@@ -1,17 +1,17 @@
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import DirectionsBikeOutlinedIcon from "@mui/icons-material/DirectionsBikeOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
-
+import CyclingIcon from "../../assets/images/cycling-icon.png";
 import { useEffect, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
+import "../../stylesheets/header.scss";
 const Header = () => {
   const navLinks = [
-    { id: 1, navLink: "Home", path:"/home" },
-    { id: 2, navLink: "Shop", path:"/shop" },
-    { id: 3, navLink: "Cart", path:"/cart" },
+    { id: 1, navLink: "Home", path: "/home" },
+    { id: 2, navLink: "Shop", path: "/shop" },
+    { id: 3, navLink: "Cart", path: "/cart" },
   ];
 
   const [nav, setNav] = useState(false);
@@ -20,14 +20,18 @@ const Header = () => {
   const [navFix, setNavFix] = useState("inherit");
 
   const listenScrollEvent = () => {
+    const headerLogo = document.querySelector(".header-logo");
+
     if (window.scrollY > 10) {
       setNavColor("#06283D");
       setNavTextColor("white");
       setNavFix("fixed");
+      headerLogo.classList.add("scroll");
     } else {
       setNavColor("white");
       setNavTextColor("black");
       setNavFix("inherit");
+      headerLogo.classList.remove("scroll");
     }
   };
 
@@ -52,12 +56,18 @@ const Header = () => {
 
       <div className="flex justify-between items-center w-full mx-auto container">
         {/* Logo/Name */}
-        <div className="logo h-[100%] cursor-pointer">
-          <DirectionsBikeOutlinedIcon sx={{ fontSize: "2.5rem" }} />
+        <div className="logo h-[100%] cursor-pointer max-w-[4rem] ">
+          {/* <DirectionsBikeOutlinedIcon sx={{ fontSize: "2.5rem" }} /> */}
+
+          <img
+            src={CyclingIcon}
+            alt="Pedal Deck Logo"
+            className="header-logo"
+          />
         </div>
         {/* Links */}
         <ul className="nav-links hidden md:flex">
-          {navLinks.map(({ id, navLink,path }) => (
+          {navLinks.map(({ id, navLink, path }) => (
             <Link key={id} className="px-4 text-sm  cursor-pointer" to={path}>
               {navLink}
             </Link>
@@ -83,17 +93,26 @@ const Header = () => {
 
       {/* Mobile menu -- Smaller Device */}
       <div
-        className="mobile-menu cursor-pointer z-10 md:hidden"
+        className="mobile-menu cursor-pointer md:hidden"
         onClick={() => setNav(!nav)}
       >
-        {nav ? <FaTimes size={25} /> : <FaBars size={25} />}
+        {nav ? (
+          <FaTimes size={25} color={nav ? "white" : "black"} />
+        ) : (
+          <FaBars size={25} />
+        )}
       </div>
 
       {/* Mobile menu link */}
       {nav && (
-        <ul className="w-full h-screen absolute top-0 left-0 bg-c-primary flex justify-center items-center flex-col">
-          {navLinks.map(({ id, navLink,path }) => (
-            <Link key={id} className="py-6 capitalize cursor-pointer text-3xl" to={path}>
+        <ul className="w-full h-screen absolute top-0 left-0 bg-c-primary flex justify-center items-center flex-col menu-link">
+          {navLinks.map(({ id, navLink, path }) => (
+            <Link
+              key={id}
+              className="py-6 capitalize cursor-pointer text-3xl"
+              to={path}
+              onClick={() => setNav(!nav)}
+            >
               {navLink}
             </Link>
           ))}

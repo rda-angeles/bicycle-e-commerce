@@ -1,5 +1,5 @@
 const Helmet = (props) => {
-  document.title = "BikeBikeBike - " + props.title;
+  document.title = "Pedal Deck - " + props.title;
   return <div className="">{props.children}</div>;
 };
 

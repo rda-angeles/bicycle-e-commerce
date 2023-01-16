@@ -22,7 +22,7 @@ const ProductDetails = () => {
         <div className="grid lg:grid-cols-2 gap-x-10">
           {/* Image */}
 
-          <div className="image-wrapper max-w-3xl">
+          <div className="image-wrapper max-w-3xl mb-5">
             <img
               src={product.img}
               alt={product.prodName}
@@ -36,7 +36,7 @@ const ProductDetails = () => {
             <h3 className="mb-4 font-f-secondary">{product.category}</h3>
             <p className="font-f-secondary">{product.desc}</p>
 
-            <div className="mt-9">
+            <div className="mt-9 flex items-center">
               <Button
                 variant="contained"
                 className="flex gap-2"
@@ -45,8 +45,8 @@ const ProductDetails = () => {
                   ":hover": { color: "white", backgroundColor: "#47B5FF" },
                 }}
               >
-                Add to Cart
                 <ShoppingCartIcon sx={{ fontSize: "1.2rem" }} />
+                <h3>{product.price}</h3>
               </Button>
             </div>
           </div>
