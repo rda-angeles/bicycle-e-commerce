@@ -3,7 +3,7 @@ import { products } from "../assets/data";
 import Button from "@mui/material/Button";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import { toast } from "react-toastify";
 import { useDispatch } from "react-redux";
@@ -11,6 +11,7 @@ import "../stylesheets/productDetails.scss";
 import { cartActions } from "../redux/slices/cartSlice";
 
 const ProductDetails = () => {
+  const navigateBack = useNavigate();
   const { id } = useParams();
   const product = products.find((item) => item.id == id);
   const dispatch = useDispatch();
@@ -31,10 +32,13 @@ const ProductDetails = () => {
       <div className="container mx-auto ">
         {/* Back Button */}
         <div className="mb-3">
-          <Link to={"/home"} className="flex items-center">
+          <button
+            onClick={() => navigateBack(-1)}
+            className="flex items-center"
+          >
             <ArrowBackIosNewIcon />
             <p className="text-sm">Back</p>
-          </Link>
+          </button>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-x-10">

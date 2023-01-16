@@ -1,0 +1,27 @@
+.shop-section {
+  // height: 100vh;
+
+  .selectors-wrapper {
+    padding: 3rem;
+
+    .filter-category {
+      select {
+        background-color: #06283d;
+        padding: 0.3rem 1.5rem;
+        color: white;
+        border-radius: 5%;
+        cursor: pointer;
+        outline: none;
+      }
+    }
+
+    .search-item {
+      input {
+        border: 1px solid black;
+        border-radius: 10px;
+        outline: none;
+        padding: 0.2rem 10rem 0.2rem 1rem;
+      }
+    }
+  }
+}
