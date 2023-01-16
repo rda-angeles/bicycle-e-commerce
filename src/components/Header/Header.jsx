@@ -6,8 +6,11 @@ import { useEffect, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+
+import { useSelector } from "react-redux";
 import "../../stylesheets/header.scss";
 const Header = () => {
+  const totalQuantity = useSelector((state) => state.cart.totalQuantity);
   const navLinks = [
     { id: 1, navLink: "Home", path: "/home" },
     { id: 2, navLink: "Shop", path: "/shop" },
@@ -20,18 +23,18 @@ const Header = () => {
   const [navFix, setNavFix] = useState("inherit");
 
   const listenScrollEvent = () => {
-    const headerLogo = document.querySelector(".header-logo");
+    const headerScroll = document.querySelector(".header");
 
     if (window.scrollY > 10) {
       setNavColor("#06283D");
       setNavTextColor("white");
       setNavFix("fixed");
-      headerLogo.classList.add("scroll");
+      headerScroll.classList.add("scroll");
     } else {
       setNavColor("white");
       setNavTextColor("black");
       setNavFix("inherit");
-      headerLogo.classList.remove("scroll");
+      headerScroll.classList.remove("scroll");
     }
   };
 
@@ -44,7 +47,7 @@ const Header = () => {
 
   return (
     <div
-      className="flex justify-between items-center w-full h-20 px-4 z-30  shadow-black shadow-sm"
+      className="flex justify-between items-center w-full h-20 px-4 z-30  shadow-black shadow-sm header"
       style={{
         backgroundColor: navColor,
         transition: "all .3s",
@@ -75,7 +78,7 @@ const Header = () => {
         </ul>
 
         <div className="flex">
-          <motion.div whileTap={{ scale: 1.1 }}>
+          <motion.div whileTap={{ scale: 1.1 }} className="relative">
             <ShoppingCartOutlinedIcon
               sx={{
                 fontSize: "1.8rem",
@@ -83,6 +86,8 @@ const Header = () => {
                 cursor: "pointer",
               }}
             />
+
+            <span className=" item-counter">{totalQuantity}</span>
           </motion.div>
 
           <motion.div whileTap={{ scale: 1.1 }} className="mr-2 lg:mr-0">

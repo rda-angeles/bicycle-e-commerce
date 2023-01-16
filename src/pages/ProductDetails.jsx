@@ -4,10 +4,28 @@ import Button from "@mui/material/Button";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import { Link } from "react-router-dom";
+
+import { toast } from "react-toastify";
+import { useDispatch } from "react-redux";
 import "../stylesheets/productDetails.scss";
+import { cartActions } from "../redux/slices/cartSlice";
+
 const ProductDetails = () => {
   const { id } = useParams();
   const product = products.find((item) => item.id == id);
+  const dispatch = useDispatch();
+  const addToCart = () => {
+    dispatch(
+      cartActions.addItem({
+        id: product.id,
+        prodName: product.prodName,
+        price: product.price,
+        img: product.img,
+      })
+    );
+
+    toast.success("Product added successfully!");
+  };
   return (
     <div className="px-4 prod-details flex items-center">
       <div className="container mx-auto ">
@@ -44,6 +62,7 @@ const ProductDetails = () => {
                   backgroundColor: "#256D85",
                   ":hover": { color: "white", backgroundColor: "#47B5FF" },
                 }}
+                onClick={addToCart}
               >
                 <ShoppingCartIcon sx={{ fontSize: "1.2rem" }} />
                 <h3>{product.price}</h3>

@@ -1,6 +1,13 @@
-.header-logo {
+.header {
   &.scroll {
-    filter: brightness(0) invert(1);
+    .header-logo {
+      filter: brightness(0) invert(1);
+    }
+
+    .item-counter {
+      background-color: white;
+      color: black;
+    }
   }
 }
 
@@ -11,4 +18,16 @@
   background-color: #256d85;
   z-index: 99;
   color: white;
+}
+
+.item-counter {
+  background-color: black;
+  color: white;
+  padding: 0.02rem 0.35rem;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  position: absolute;
+  right: 0.2rem;
+  top: -0.5rem;
+  font-weight: bold;
 }
