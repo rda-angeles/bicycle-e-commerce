@@ -8,7 +8,7 @@ import { toast } from "react-toastify";
 import { useDispatch } from "react-redux";
 import { cartActions } from "../redux/slices/cartSlice";
 import SectionImage from "../components/UI/SectionImage";
-
+import CurrencyFormatter from "../helpers/currencyFormatter";
 import BikeDetailImg from "../assets/images/about.jpg";
 const ProductDetails = () => {
   const navigateBack = useNavigate();
@@ -72,7 +72,7 @@ const ProductDetails = () => {
                   onClick={addToCart}
                 >
                   <ShoppingCartIcon sx={{ fontSize: "1.2rem" }} />
-                  <h3>{product.price}</h3>
+                  <CurrencyFormatter price={product.price}/>
                 </Button>
               </div>
             </div>
