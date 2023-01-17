@@ -4,8 +4,8 @@ import Helmet from "../components/Helmet/Helmet";
 import SectionImage from "../components/UI/SectionImage";
 import BikeShop from "../assets/images/bike-shop.jpg";
 import ProductList from "../components/UI/ProductList";
-import { useSelector } from "react-redux";
 import { useState } from "react";
+
 const Shop = () => {
   const [items, setItems] = useState(products);
 

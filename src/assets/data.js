@@ -16,7 +16,7 @@ export const products = [
   {
     id: 1,
     prodName: "S-works",
-    price: "100,000php",
+    price: 252395,
     category: "Road Bike",
     desc: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique voluptatum praesentium nihil amet qui, aliquam quisquam quaerat dolor veniam, quis hic reprehenderit autem quae sunt error laudantium impedit ea quo. Architecto consequuntur fugiat ratione officiis aliquam consequatur iste, magni ipsa quam laborum quos voluptatum ea odit voluptate dolore quaerat nostrum, vel ullam impedit saepe quas! Sunt dolor deleniti impedit necessitatibus quasi! Earum est harum aspernatur. Temporibus sunt enim necessitatibus labore ratione? Corporis soluta, tempora laborum quia quisquam, libero ea numquam, suscipit iure obcaecati delectus deserunt? Possimus ipsum, ipsam maiores suscipit, earum quibusdam sint atque aperiam ad, officia delectus nobis ipsa?",
     img: img1,
@@ -24,7 +24,7 @@ export const products = [
   {
     id: 2,
     prodName: "Cannondale",
-    price: "100,000php",
+    price: 164000,
     category: "Road Bike",
     desc: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique voluptatum praesentium nihil amet qui, aliquam quisquam quaerat dolor veniam, quis hic reprehenderit autem quae sunt error laudantium impedit ea quo. Architecto consequuntur fugiat ratione officiis aliquam consequatur iste, magni ipsa quam laborum quos voluptatum ea odit voluptate dolore quaerat nostrum, vel ullam impedit saepe quas! Sunt dolor deleniti impedit necessitatibus quasi! Earum est harum aspernatur. Temporibus sunt enim necessitatibus labore ratione? Corporis soluta, tempora laborum quia quisquam, libero ea numquam, suscipit iure obcaecati delectus deserunt? Possimus ipsum, ipsam maiores suscipit, earum quibusdam sint atque aperiam ad, officia delectus nobis ipsa?",
     img: img2,
@@ -32,7 +32,7 @@ export const products = [
   {
     id: 3,
     prodName: "Orbea",
-    price: "100,000php",
+    price: 89990,
     category: "Road Bike",
     desc: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique voluptatum praesentium nihil amet qui, aliquam quisquam quaerat dolor veniam, quis hic reprehenderit autem quae sunt error laudantium impedit ea quo. Architecto consequuntur fugiat ratione officiis aliquam consequatur iste, magni ipsa quam laborum quos voluptatum ea odit voluptate dolore quaerat nostrum, vel ullam impedit saepe quas! Sunt dolor deleniti impedit necessitatibus quasi! Earum est harum aspernatur. Temporibus sunt enim necessitatibus labore ratione? Corporis soluta, tempora laborum quia quisquam, libero ea numquam, suscipit iure obcaecati delectus deserunt? Possimus ipsum, ipsam maiores suscipit, earum quibusdam sint atque aperiam ad, officia delectus nobis ipsa?",
     img: img3,
@@ -40,7 +40,7 @@ export const products = [
   {
     id: 4,
     prodName: "Giant",
-    price: "100,000php",
+    price: 120000,
     category: "Road Bike",
     desc: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique voluptatum praesentium nihil amet qui, aliquam quisquam quaerat dolor veniam, quis hic reprehenderit autem quae sunt error laudantium impedit ea quo. Architecto consequuntur fugiat ratione officiis aliquam consequatur iste, magni ipsa quam laborum quos voluptatum ea odit voluptate dolore quaerat nostrum, vel ullam impedit saepe quas! Sunt dolor deleniti impedit necessitatibus quasi! Earum est harum aspernatur. Temporibus sunt enim necessitatibus labore ratione? Corporis soluta, tempora laborum quia quisquam, libero ea numquam, suscipit iure obcaecati delectus deserunt? Possimus ipsum, ipsam maiores suscipit, earum quibusdam sint atque aperiam ad, officia delectus nobis ipsa?",
     img: img4,
@@ -48,7 +48,7 @@ export const products = [
   {
     id: 5,
     prodName: "Trek",
-    price: "100,000php",
+    price: 90000,
     category: "Mountain Bike",
     desc: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique voluptatum praesentium nihil amet qui, aliquam quisquam quaerat dolor veniam, quis hic reprehenderit autem quae sunt error laudantium impedit ea quo. Architecto consequuntur fugiat ratione officiis aliquam consequatur iste, magni ipsa quam laborum quos voluptatum ea odit voluptate dolore quaerat nostrum, vel ullam impedit saepe quas! Sunt dolor deleniti impedit necessitatibus quasi! Earum est harum aspernatur. Temporibus sunt enim necessitatibus labore ratione? Corporis soluta, tempora laborum quia quisquam, libero ea numquam, suscipit iure obcaecati delectus deserunt? Possimus ipsum, ipsam maiores suscipit, earum quibusdam sint atque aperiam ad, officia delectus nobis ipsa?",
     img: img5,
@@ -56,7 +56,7 @@ export const products = [
   {
     id: 6,
     prodName: "Sunpeed Kepler",
-    price: "100,000php",
+    price: 24000,
     category: "Gravel Bike",
     desc: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique voluptatum praesentium nihil amet qui, aliquam quisquam quaerat dolor veniam, quis hic reprehenderit autem quae sunt error laudantium impedit ea quo. Architecto consequuntur fugiat ratione officiis aliquam consequatur iste, magni ipsa quam laborum quos voluptatum ea odit voluptate dolore quaerat nostrum, vel ullam impedit saepe quas! Sunt dolor deleniti impedit necessitatibus quasi! Earum est harum aspernatur. Temporibus sunt enim necessitatibus labore ratione? Corporis soluta, tempora laborum quia quisquam, libero ea numquam, suscipit iure obcaecati delectus deserunt? Possimus ipsum, ipsam maiores suscipit, earum quibusdam sint atque aperiam ad, officia delectus nobis ipsa?",
     img: img6,
@@ -64,7 +64,7 @@ export const products = [
   {
     id: 7,
     prodName: "Orbea",
-    price: "100,000php",
+    price: 96000,
     category: "Mountain Bike",
     desc: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique voluptatum praesentium nihil amet qui, aliquam quisquam quaerat dolor veniam, quis hic reprehenderit autem quae sunt error laudantium impedit ea quo. Architecto consequuntur fugiat ratione officiis aliquam consequatur iste, magni ipsa quam laborum quos voluptatum ea odit voluptate dolore quaerat nostrum, vel ullam impedit saepe quas! Sunt dolor deleniti impedit necessitatibus quasi! Earum est harum aspernatur. Temporibus sunt enim necessitatibus labore ratione? Corporis soluta, tempora laborum quia quisquam, libero ea numquam, suscipit iure obcaecati delectus deserunt? Possimus ipsum, ipsam maiores suscipit, earum quibusdam sint atque aperiam ad, officia delectus nobis ipsa?",
     img: img7,
@@ -72,7 +72,7 @@ export const products = [
   {
     id: 8,
     prodName: "Mountainpeak",
-    price: "100,000php",
+    price: 50000,
     category: "Mountain Bike",
     desc: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique voluptatum praesentium nihil amet qui, aliquam quisquam quaerat dolor veniam, quis hic reprehenderit autem quae sunt error laudantium impedit ea quo. Architecto consequuntur fugiat ratione officiis aliquam consequatur iste, magni ipsa quam laborum quos voluptatum ea odit voluptate dolore quaerat nostrum, vel ullam impedit saepe quas! Sunt dolor deleniti impedit necessitatibus quasi! Earum est harum aspernatur. Temporibus sunt enim necessitatibus labore ratione? Corporis soluta, tempora laborum quia quisquam, libero ea numquam, suscipit iure obcaecati delectus deserunt? Possimus ipsum, ipsam maiores suscipit, earum quibusdam sint atque aperiam ad, officia delectus nobis ipsa?",
     img: img8,
@@ -80,7 +80,7 @@ export const products = [
   {
     id: 9,
     prodName: "Canyon",
-    price: "100,000php",
+    price: 110000,
     category: "Mountain Bike",
     desc: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique voluptatum praesentium nihil amet qui, aliquam quisquam quaerat dolor veniam, quis hic reprehenderit autem quae sunt error laudantium impedit ea quo. Architecto consequuntur fugiat ratione officiis aliquam consequatur iste, magni ipsa quam laborum quos voluptatum ea odit voluptate dolore quaerat nostrum, vel ullam impedit saepe quas! Sunt dolor deleniti impedit necessitatibus quasi! Earum est harum aspernatur. Temporibus sunt enim necessitatibus labore ratione? Corporis soluta, tempora laborum quia quisquam, libero ea numquam, suscipit iure obcaecati delectus deserunt? Possimus ipsum, ipsam maiores suscipit, earum quibusdam sint atque aperiam ad, officia delectus nobis ipsa?",
     img: img9,
@@ -89,7 +89,7 @@ export const products = [
   {
     id: 10,
     prodName: "Specialized S-Works Diverge",
-    price: "100,000php",
+    price: 150000,
     category: "Gravel Bike",
     desc: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique voluptatum praesentium nihil amet qui, aliquam quisquam quaerat dolor veniam, quis hic reprehenderit autem quae sunt error laudantium impedit ea quo. Architecto consequuntur fugiat ratione officiis aliquam consequatur iste, magni ipsa quam laborum quos voluptatum ea odit voluptate dolore quaerat nostrum, vel ullam impedit saepe quas! Sunt dolor deleniti impedit necessitatibus quasi! Earum est harum aspernatur. Temporibus sunt enim necessitatibus labore ratione? Corporis soluta, tempora laborum quia quisquam, libero ea numquam, suscipit iure obcaecati delectus deserunt? Possimus ipsum, ipsam maiores suscipit, earum quibusdam sint atque aperiam ad, officia delectus nobis ipsa?",
     img: img11,
@@ -97,7 +97,7 @@ export const products = [
   {
     id: 11,
     prodName: "3T Exploro Force",
-    price: "100,000php",
+    price: 130500,
     category: "Gravel Bike",
     desc: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique voluptatum praesentium nihil amet qui, aliquam quisquam quaerat dolor veniam, quis hic reprehenderit autem quae sunt error laudantium impedit ea quo. Architecto consequuntur fugiat ratione officiis aliquam consequatur iste, magni ipsa quam laborum quos voluptatum ea odit voluptate dolore quaerat nostrum, vel ullam impedit saepe quas! Sunt dolor deleniti impedit necessitatibus quasi! Earum est harum aspernatur. Temporibus sunt enim necessitatibus labore ratione? Corporis soluta, tempora laborum quia quisquam, libero ea numquam, suscipit iure obcaecati delectus deserunt? Possimus ipsum, ipsam maiores suscipit, earum quibusdam sint atque aperiam ad, officia delectus nobis ipsa?",
     img: img12,
@@ -105,7 +105,7 @@ export const products = [
   {
     id: 12,
     prodName: "Factor Vista",
-    price: "100,000php",
+    price: 120000,
     category: "Gravel Bike",
     desc: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique voluptatum praesentium nihil amet qui, aliquam quisquam quaerat dolor veniam, quis hic reprehenderit autem quae sunt error laudantium impedit ea quo. Architecto consequuntur fugiat ratione officiis aliquam consequatur iste, magni ipsa quam laborum quos voluptatum ea odit voluptate dolore quaerat nostrum, vel ullam impedit saepe quas! Sunt dolor deleniti impedit necessitatibus quasi! Earum est harum aspernatur. Temporibus sunt enim necessitatibus labore ratione? Corporis soluta, tempora laborum quia quisquam, libero ea numquam, suscipit iure obcaecati delectus deserunt? Possimus ipsum, ipsam maiores suscipit, earum quibusdam sint atque aperiam ad, officia delectus nobis ipsa?",
     img: img13,

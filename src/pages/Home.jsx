@@ -5,6 +5,7 @@ import Button from "@mui/material/Button";
 import ProductList from "../components/UI/ProductList";
 import { products } from "../assets/data";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [trendingRoadbikes, setTrendingRoadBikes] = useState(products);
@@ -41,16 +42,17 @@ const Home = () => {
               Voluptatum officiis neque iste minima ipsam aut aliquam ratione
               alias cum nemo!
             </p>
-
-            <Button
-              sx={{
-                color: "white",
-                backgroundColor: "#256D85",
-                border: "1px solid #256D85",
-              }}
-            >
-              Shop now!
-            </Button>
+            <Link to={"/shop"}>
+              <Button
+                sx={{
+                  color: "white",
+                  backgroundColor: "#256D85",
+                  border: "1px solid #256D85",
+                }}
+              >
+                Shop now!
+              </Button>
+            </Link>
           </div>
 
           <div className="image-wrapper col-span-2">

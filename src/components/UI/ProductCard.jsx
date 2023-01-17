@@ -8,9 +8,11 @@ import AddCircleIcon from "@mui/icons-material/AddCircle";
 import { motion } from "framer-motion";
 import { toast } from "react-toastify";
 import { useDispatch } from "react-redux";
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import { cartActions } from "../../redux/slices/cartSlice";
-
+import CurrencyFormatter from "../../helpers/currencyFormatter";
+import "../../stylesheets/productCard.scss";
 const ProductCard = ({ item }) => {
   const dispatch = useDispatch();
 
@@ -24,20 +26,22 @@ const ProductCard = ({ item }) => {
       })
     );
 
-    toast.success("Product added successfully!")
+    toast.success("Product added successfully!");
   };
 
   return (
-    <motion.div whileHover={{ scale: 1.1 }}>
+    <motion.div whileHover={{ scale: 1.1 }} className="prod-card">
       <Card sx={{ maxWidth: 345, margin: "2rem auto" }}>
         <Link to={`/shop/${item.id}`}>
           <CardActionArea>
-            <CardMedia
-              component="img"
-              image={item.img}
+            <LazyLoadImage
+              src={item.img}
               alt={item.prodName}
-              sx={{ objectFit: "cover", height: "200px" }}
+              effect="blur"
+              height="200px"
+              width="100%"
             />
+
             <CardContent>
               <h1 className="text-2xl font-bold">{item.prodName}</h1>
               <p className="font-f-secondary mt-2">
@@ -52,7 +56,9 @@ const ProductCard = ({ item }) => {
           className="flex justify-between"
           sx={{ padding: "8px 1rem" }}
         >
-          <h3 className="font-semibold">{item.price}</h3>
+          <h3 className="font-semibold">
+            <CurrencyFormatter price={item.price} />
+          </h3>
           <motion.div
             whileTap={{ scale: 1.2 }}
             whileHover={{
@@ -61,7 +67,7 @@ const ProductCard = ({ item }) => {
             onClick={addToCart}
           >
             <Link>
-              <AddCircleIcon />
+              <AddCircleIcon sx={{ fontSize: "1.8rem", color: "#256D85" }} />
             </Link>
           </motion.div>
         </CardActions>

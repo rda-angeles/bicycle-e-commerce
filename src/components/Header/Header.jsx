@@ -5,7 +5,7 @@ import CyclingIcon from "../../assets/images/cycling-icon.png";
 import { useEffect, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import { useSelector } from "react-redux";
 import "../../stylesheets/header.scss";
@@ -71,28 +71,33 @@ const Header = () => {
         {/* Links */}
         <ul className="nav-links hidden md:flex">
           {navLinks.map(({ id, navLink, path }) => (
-            <Link key={id} className="px-4 text-sm  cursor-pointer" to={path}>
+            <NavLink
+              key={id}
+              className="px-4 text-sm cursor-pointer"
+              style={({ isActive }) =>
+                isActive ? { fontWeight: "bolder" } : undefined
+              }
+              to={path}
+            >
               {navLink}
-            </Link>
+            </NavLink>
           ))}
         </ul>
 
         <div className="flex">
-          <motion.div whileTap={{ scale: 1.1 }} className="relative">
-            <ShoppingCartOutlinedIcon
-              sx={{
-                fontSize: "1.8rem",
-                marginRight: ".5rem",
-                cursor: "pointer",
-              }}
-            />
+          <Link to={"/cart"}>
+            <motion.div whileTap={{ scale: 1.1 }} className="relative">
+              <ShoppingCartOutlinedIcon
+                sx={{
+                  fontSize: "1.8rem",
+                  marginRight: ".5rem",
+                  cursor: "pointer",
+                }}
+              />
 
-            <span className=" item-counter">{totalQuantity}</span>
-          </motion.div>
-
-          <motion.div whileTap={{ scale: 1.1 }} className="mr-2 lg:mr-0">
-            <AccountCircleIcon sx={{ fontSize: "1.8rem", cursor: "pointer" }} />
-          </motion.div>
+              <span className=" item-counter">{totalQuantity}</span>
+            </motion.div>
+          </Link>
         </div>
       </div>
 
